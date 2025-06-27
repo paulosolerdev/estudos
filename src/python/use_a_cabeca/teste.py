@@ -1,4 +1,6 @@
-import random
+contador = 0
+for i in range(10):
+    for j in range(10):
+        contador += 1
 
-wait_time = random.randint(1, 60)
-print(f"Waiting for {wait_time} seconds...")
+print(contador)
