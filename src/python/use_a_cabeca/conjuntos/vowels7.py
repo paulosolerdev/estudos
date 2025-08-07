@@ -1,12 +1,7 @@
-vowels = {'a', 'e', 'e', 'i', 'o', 'u', 'u'}
-#print(vowels)
+vowels = set('aeiou')
+word = input("Provide a word to search for vowels: ")
 
-vowels2 = set('aeiou')
-#print(vowels2)
+found = vowels.intersection(set(word))
 
-word = 'hello'
-
-u = vowels.union(set(word))
-
-print(vowels)
-print(u)
+for vowel in found:
+    print(vowel)
