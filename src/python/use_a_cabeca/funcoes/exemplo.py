@@ -17,8 +17,9 @@
 
 
 def redefinir_lista(lst):
-    lst = [0, 0, 0]   # cria nova lista
+    lst = [0, 0, 0]  # cria nova lista
     print("Dentro:", lst)
+
 
 x = [1, 2, 3]
 redefinir_lista(x)

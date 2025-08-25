@@ -23,16 +23,19 @@
 #     vowels = set('aeiou')
 #     return vowels.intersection(set(word))
 
+
 def search4vowels(phrase: str) -> set:
     """Return any vowels found in a supplied phrase."""
-    vowels = set('aeiou')
+    vowels = set("aeiou")
     return vowels.intersection(set(phrase.lower()))
 
-def search4letters(phrase: str, letters: str='aeiou') -> set:
+
+def search4letters(phrase: str, letters: str = "aeiou") -> set:
     return set(letters).intersection(set(phrase.lower()))
 
-print(search4letters('Hello World', 'aeiou'))
-print(search4letters('Paulo ama', 'Susana'))
 
-print(search4vowels('Hello World'))
-print(search4vowels('Paulo ama Susana'))
+print(search4letters("Hello World", "aeiou"))
+print(search4letters("Paulo ama", "Susana"))
+
+print(search4vowels("Hello World"))
+print(search4vowels("Paulo ama Susana"))
