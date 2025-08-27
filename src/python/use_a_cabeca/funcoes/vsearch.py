@@ -33,9 +33,9 @@ def search4vowels(phrase: str) -> set:
 def search4letters(phrase: str, letters: str = "aeiou") -> set:
     return set(letters).intersection(set(phrase.lower()))
 
+if __name__ == "__main__":
+    print(search4letters("Hello World", "aeiou"))
+    print(search4letters("Paulo ama", "Susana"))
 
-print(search4letters("Hello World", "aeiou"))
-print(search4letters("Paulo ama", "Susana"))
-
-print(search4vowels("Hello World"))
-print(search4vowels("Paulo ama Susana"))
+#print(search4vowels("Hello World"))
+#print(search4vowels("Paulo ama Susana"))
