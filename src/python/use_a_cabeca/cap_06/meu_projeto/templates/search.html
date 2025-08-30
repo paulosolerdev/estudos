@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block body %}
+  <h1>{{ the_title }}</h1>
+
+  <p>Use este formulário para enviar uma busca:</p>
+
+  <form method="POST" action="/search">
+    <label for="phrase">Phrase:</label>
+    <input type="text" name="phrase" id="phrase"><br><br>
+
+    <label for="letters">Letters:</label>
+    <input type="text" name="letters" id="letters" value="aeiou"><br><br>
+
+    <button type="submit">Search</button>
+  </form>
+{% endblock %}
