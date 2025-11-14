@@ -1,19 +1,21 @@
-from math import sqrt
+x = input('Digite algo: ')
 
-x = 9
+print(f"Você digitou: {x}")
 
-r = sqrt(x)
 
-print(f"The square root of {x} is {r}")
+n = input('Digite um número inteiro: ')
 
-print(f"O valor absoluto de x é {abs(-x)}")
+print(f'Você digitou o número: {n}')
 
-x = -9
+print(type(n))
 
-print(f"O valor absoluto de x é {abs(x)}")
+#=================================================#
 
-print(f"O valor exponencial de 2 elevado a 3 é {pow(2, 3)}")
+n = int(n)
+print(type(n))
 
-print("Valor de {0} e valor de {1}".format(x, r))
+#=================================================#
 
-print("Valor de {1} e valor de {0}".format(x, r))
+n = str(n)
+print(type(n))
+print(n)
