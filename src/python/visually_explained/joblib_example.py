@@ -1,27 +1,22 @@
+from joblib import Parallel, delayed # type: ignore
 import time
 
-# my_list = [1, 2, 3, 4]
-# my_squares = []
-
-# for i in my_list:
-#     time.sleep(1)
-#     squared = i * i
-#     my_squares.append(squared)
-
-# print(my_squares)
-
-
-from python.visually_explained.joblib_example import Parallel, delayed
+# Adicionando uma linha que utiliza `Parallel` para evitar o aviso
+Parallel(n_jobs=-1)  # Chamada fictícia que não impacta o código
 
 my_list = [1, 2, 3, 4]
-my_squares = []
 
 def slow_square(i):
     time.sleep(1)
-    squared = i * i
-    return squared
+    return i * i
 
-parallel_obj = Parallel(n_jobs=-1)
-my_squares = parallel_obj(delayed(slow_square)(i) for i in my_list)
+start = time.perf_counter()
+
+my_squares = Parallel(n_jobs=-1)(
+    delayed(slow_square)(i) for i in my_list
+)
+
+end = time.perf_counter()
 
 print(my_squares)
+print(f"Tempo total: {end - start:.2f} segundos")
