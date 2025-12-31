@@ -1,20 +1,24 @@
-s = 'Olá, mundo.'
-print(s)
-print(repr(s))
-print(str(1/7))
+# import math
 
+# print(f'O valor de pi é aproximadamente {math.pi:.3f}')
 
-x = 10 * 3.25
-y = 200 * 200
-s = f'O valor de x é {repr(x)} e de y é {repr(y)}...'
-print(s)
+#=========================================================#
 
+# tabela = {'Sjoerd':4127, 'Jack':4098, 'Dcab':7678}
 
-# A repr() da string adiciona aspas e contrabarras:
-ola = 'olá, mundo\n'
-olas = repr(ola)
-print(olas)
+# for nome, telefone in tabela.items():
+#     print(f'{nome:10} ==> {telefone:10d}')
 
+#=========================================================#
 
-# O argumento de repr() pode ser qualquer objeto Python:
-print(repr((x, y, ('spam', 'ovos'))))
+# animais = 'enguias'
+# print(f'Meu hovercraft está cheio de {animais}.')
+# print(f'Meu hovercraft está cheio de {animais!r}.')
+
+#=========================================================#
+
+bugs = 'roaches'
+count = 13
+area = 'living room'
+
+print(f'Debugging {bugs=} {count=} {area=}')
