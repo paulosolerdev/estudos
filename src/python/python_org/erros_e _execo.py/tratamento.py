@@ -42,5 +42,5 @@ except Exception as inst:
      print(inst)
 
      x, y = inst.args
-     print('x =', x)
-     print('y =', y)
+     print(f'x = {x}')
+     print(f'y = {y}')
