@@ -11,12 +11,20 @@ def teste_de_escopo():
         spam = "spam global"
 
     spam = "spam teste"
+    print("Antes de qualquer atribuição:", spam)
+
     faz_local()
     print("Após atribuição local:", spam)
+
     faz_nonlocal()
     print("Após atribuição não-local:", spam)
+    
     faz_global()
     print("Após atribuição global:", spam)
 
+
 teste_de_escopo()
+
+print()
+
 print("No escopo global:", spam)

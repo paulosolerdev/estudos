@@ -26,3 +26,7 @@ class Complex:
         
 x = Complex(3.0, -4.5)
 print(f'{x.r}, {x.i}')
+
+# Ou poderia ser escrito assim:
+
+print(f"{Complex(3.0, -4.5).r}, {Complex(3.0, -4.5).i}")
