@@ -10,4 +10,4 @@ birthday = date(1985, 1, 19)
 print("Meu aniversário:", birthday)
 
 age = now - birthday
-print(age.days) # esse valor significa a quantidade de dias vividos até hoje
+print(f'Minha idade em dias: {age.days}') # esse valor significa a quantidade de dias vividos até hoje

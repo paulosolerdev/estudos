@@ -6,4 +6,6 @@ parser = argparse.ArgumentParser(
 parser.add_argument('arquivos', nargs='+')
 parser.add_argument('-l', '--linhas', type=int, default=10)
 args = parser.parse_args()
+
+
 print(args)
