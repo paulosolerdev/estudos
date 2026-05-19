@@ -12,8 +12,18 @@
 
 # =================================================== $
 
+"""
 planetas = ['Mercúrio', 'Vênus', 'Terra', 'Marte', 'Júpiter', 'Saturno', 
             'Urano', 'Netuno']
 
 for planeta in planetas:
     print(f'Planeta: {planeta}')
+"""
+
+# =================================================== $
+
+
+i = 0
+while i < 10:
+    print(f'Valor de i: {i}')
+    i += 1
