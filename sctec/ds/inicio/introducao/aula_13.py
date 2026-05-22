@@ -45,14 +45,14 @@ class Pessoa:
 
 # Polimorfismo
 
- class Aluno(Pessoa):
-    def __init__(self, nome, idade, altura, matricula):
-        super().__init__(nome, idade, altura)
-        self.matricula = matricula
+#  class Aluno(Pessoa):
+#     def __init__(self, nome, idade, altura, matricula):
+#         super().__init__(nome, idade, altura)
+#         self.matricula = matricula
 
-    def estudante(self):
-        print(f'A matrícula do aluno é: {self.matricula}')
+#     def estudante(self):
+#         print(f'A matrícula do aluno é: {self.matricula}')
 
-aluno1 = Aluno('Maria', 20, "1,60", '2024001')
-aluno1.apresentar()
-aluno1.estudante()
+# aluno1 = Aluno('Maria', 20, "1,60", '2024001')
+# aluno1.apresentar()
+# aluno1.estudante()
