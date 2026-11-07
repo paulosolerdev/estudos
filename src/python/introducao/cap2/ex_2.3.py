@@ -11,3 +11,12 @@ print(c)
 
 x = 7
 print(x)
+
+
+s1 = "ant"
+s2 = "bat"
+s3 = "cod"
+
+print(s1)
+print(s2)
+print(s3)
