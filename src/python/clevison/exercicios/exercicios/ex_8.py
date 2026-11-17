@@ -58,14 +58,34 @@ while True:
         else:
             print("Caractere inválido.")
 
-    """
-    3. Se o usuário digitar uma palavra (mais de um caractere):
+    else:
+        # 3. Se o usuário digitar uma palavra (mais de um caractere):
+        palavra = entrada_usuario
 
-    a. Calcule e exiba o número de vogais na palavra.
-    b. Calcule e exiba o número de consoantes na palavra.
-    c. Exiba a palavra invertida.
-    d. Informe se a palavra é um palíndromo (lê-se da mesma forma de trás para frente).     
-    e. Peça ao usuário se deseja verificar outra letra ou palavra ou sair do programa.  
+        # a. Calcule e exiba o número de vogais na palavra.
+        num_vogais = sum(1 for char in palavra if char in vogais)
 
-    """
+        # b. Calcule e exiba o número de consoantes na palavra.
+        num_consoantes = sum(
+            1 for char in palavra if char.isalpha() and char not in vogais
+        )
 
+        # c. Exiba a palavra invertida.
+        palavra_invertida = palavra[::-1]
+
+        # d. Informe se a palavra é um palíndromo.
+        eh_palíndromo = palavra == palavra_invertida
+
+        print(f"Número de vogais: {num_vogais}")
+        print(f"Número de consoantes: {num_consoantes}")
+        print(f"Palavra invertida: {palavra_invertida}")
+        if eh_palíndromo:
+            print("A palavra é um palíndromo.")
+        else:
+            print("A palavra não é um palíndromo.")
+
+    # 4. Perguntar ao usuário se deseja verificar outra letra ou palavra ou sair do programa.
+    continuar = input("Deseja verificar outra letra ou palavra? (s/n): ").lower()
+    if continuar != "s":
+        print("Encerrando o programa.")
+        break
