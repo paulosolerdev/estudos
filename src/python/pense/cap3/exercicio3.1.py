@@ -6,3 +6,11 @@ como parâmetro e exiba a string com espaços suficientes à frente para que a
 
 """
 
+def right_justify(s):
+    """Exibe s deslocada para a direita até a última letra ficar na coluna 70."""
+    espacos = 70 - len(s)
+    print(' ' * espacos + s)
+
+right_justify('allen')
+right_justify('x')
+right_justify('capivara')
